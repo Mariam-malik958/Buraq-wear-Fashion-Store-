@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account - Buraq Wear</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+<body>
+
+    <!-- Apna Header Yahan Copy Karo -->
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="account.html">Sign In</a></li>
+                <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="account-page-full">
+        <div class="account-left">
+            <div class="account-text">
+                <h2>Welcome to Buraq Wear</h2>
+                <p>Join thousands of customers who trust us for quality and style. Login to access your orders, wishlist and more.</p>
+            </div>
+        </div>
+
+        <div class="account-right">
+            <div class="account-box-full">
+                <div class="form-toggle">
+                    <button id="loginToggle" class="active-toggle" onclick="showLogin()">Login</button>
+                    <button id="registerToggle" onclick="showRegister()">Register</button>
+                </div>
+
+                <!-- Login Form -->
+                <form id="LoginForm" class="form-active">
+                    <h3>Sign In to Your Account</h3>
+                    <div class="input-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <div class="form-extra">
+                        <label><input type="checkbox"> Remember me</label>
+                        <a href="#" class="forgot-pass">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="form-btn">Login</button>
+                </form>
+
+                <!-- Register Form -->
+                <form id="RegForm">
+                    <h3>Create New Account</h3>
+                    <div class="input-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Full Name" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Confirm Password" required>
+                    </div>
+                    <button type="submit" class="form-btn">Create Account</button>
+                    <p class="terms">By registering, you agree to our <a href="#">Terms & Conditions</a></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apna Footer Yahan Copy Karo -->
+
+    <script>
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var loginToggle = document.getElementById("loginToggle");
+        var registerToggle = document.getElementById("registerToggle");
+
+        function showRegister(){
+            LoginForm.style.display = "none";
+            RegForm.style.display = "block";
+            loginToggle.classList.remove("active-toggle");
+            registerToggle.classList.add("active-toggle");
+        }
+
+        function showLogin(){
+            RegForm.style.display = "none";
+            LoginForm.style.display = "block";
+            registerToggle.classList.remove("active-toggle");
+            loginToggle.classList.add("active-toggle");
+        }
+    </script>
+</body>
+</html>

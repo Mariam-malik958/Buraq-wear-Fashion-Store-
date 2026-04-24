@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Details - Buraq Wear</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Navbar wahi rahe ga jo index.html me hai -->
+
+  <section class="single-product">
+    <div class="product-img-box">
+      <img id="main-img" src="" alt="Product Image">
+    </div>
+    
+    <div class="product-details-box">
+      <h4 id="brand-name">adidas</h4>
+      <h2 id="product-name">Loading...</h2>
+      <h2 id="product-price"></h2>
+      
+      <h4>Select Size</h4>
+      <div class="size-options">
+        <button class="size-btn">S</button>
+        <button class="size-btn">M</button>
+        <button class="size-btn">L</button>
+        <button class="size-btn">XL</button>
+      </div>
+      
+      <input type="number" value="1" min="1" class="quantity">
+      <button class="order-now-btn">Order Now</button>
+      
+      <h4>Product Details</h4>
+      <p id="product-desc">Loading description...</p>
+    </div>
+  </section>
+
+<script>
+// Yahan apne sab products ka data add karo
+const allProducts = {
+  "S1": {
+          id:"S1",
+    name: "Mens Light Grey T-Shirt",
+    brand: "adidas",
+    price: "1500",
+    img: "images/products/grey.S1.jpg", // Apni image ka exact path
+    desc: "Premium quality cotton t-shirt. Soft & comfortable for daily wear."
+  },
+  "f1": {
+           id:"f1",
+    name: "Mens T-Shirt", 
+    brand: "adidas",
+    price: "1500",
+    img: "images/products/f1.jpg",
+    desc: "Classic striped design. 100% cotton fabric."
+  },
+  "S5": {  
+          id:"S5" ,
+    name: "Women Maroon Top",
+    brand: "adidas", 
+    price: "1500",
+    img: "images/products/S5.jpg",
+    desc: "Elegant maroon top with button details. Flowy design."
+  },
+  "S6": {
+             id:"S6" ,
+    name: "Mens Black T-Shirt",
+    brand: "adidas",
+    price: "1500", 
+    img: "images/products/S6.jpg",
+    desc: "Solid black oversized t-shirt. Modern streetwear look."
+  },
+  // Baaki 4 products bhi isi format me add kar do
+  "S4": {
+             id:"S4" ,
+    name: "Mens  T-Shirt",
+    brand: "adidas",
+    price: "1500", 
+    img: "images/products/S4.jpg",
+    desc: "Solid black oversized t-shirt. Modern streetwear look."
+  },
+    "n2": {
+             id:"n2" ,
+    name: "Mens  T-Shirt",
+    brand: "adidas",
+    price: "1500", 
+    img: "images/products/n2.jpg",
+    desc: "Solid black oversized t-shirt. Modern streetwear look."
+  },
+  "n4": {
+             id:"n4" ,
+    name: "Mens Black T-Shirt",
+    brand: "adidas",
+    price: "1500", 
+    img: "images/products/n4.jpg",
+    desc: "Solid black oversized t-shirt. Modern streetwear look."
+  },
+    "S3": {
+             id:"S3" ,
+    name: "Mens Black T-Shirt",
+    brand: "adidas",
+    price: "1500", 
+    img: "images/products/S3.jpg",
+    desc: "Solid black oversized t-shirt. Modern streetwear look."
+  },
+    "S10": {
+             id:"S10" ,
+    name: "Mens Black T-Shirt",
+    brand: "adidas",
+    price: "1500", 
+    img: "images/products/S10.jpg",
+    desc: "Solid black oversized t-shirt. Modern streetwear look."
+  },
+    "S9": {
+             id:"S9" ,
+    name: "Mens Black T-Shirt",
+    brand: "adidas",
+    price: "1500", 
+    img: "images/products/S9.jpg",
+    desc: "Solid black oversized t-shirt. Modern streetwear look."
+  },
+    "S": {
+             id:"S" ,
+    name: "Mens Black T-Shirt",
+    brand: "adidas",
+    price: "1500", 
+    img: "images/products/S.jpg",
+    desc: "Solid black oversized t-shirt. Modern streetwear look."
+  },
+    "n8": {
+             id:"n8" ,
+    name: "Mens Black T-Shirt",
+    brand: "adidas",
+    price: "1500", 
+    img: "images/products/n8.jpg",
+    desc: "Solid black oversized t-shirt. Modern streetwear look."
+  },
+    "S1": {
+             id:"S1" ,
+    name: "Mens Black T-Shirt",
+    brand: "adidas",
+    price: "1500", 
+    img: "images/products/S1.jpg",
+    desc: "Solid black oversized t-shirt. Modern streetwear look."
+  },
+    "S8": {
+             id:"S8" ,
+    name: " T-Shirt",
+    brand: "adidas",
+    price: "1500", 
+    img: "images/products/S8.jpg",
+    desc: "Solid black oversized t-shirt. Modern streetwear look."
+  },
+    "f7": {
+             id:"f7" ,
+    name: "Mens Black T-Shirt",
+    brand: "adidas",
+    price: "1500", 
+    img: "images/products/f7.jpg",
+    desc: "Solid black oversized t-shirt. Modern streetwear look."
+  },
+    "n1": {
+             id:"n1" ,
+    name: "Mens Black T-Shirt",
+    brand: "adidas",
+    price: "1500", 
+    img: "images/products/n1.jpg",
+    desc: "Solid black oversized t-shirt. Modern streetwear look."
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+};
+
+// URL se product ki id nikalo
+const params = new URLSearchParams(window.location.search);
+const productId = params.get('id');
+const currentProduct = allProducts[productId];
+
+// Agar product mil jaye to page pe show karo
+if(currentProduct) {
+  document.getElementById('main-img').src = currentProduct.img; // Wahi image
+  document.getElementById('brand-name').innerText = currentProduct.brand;
+  document.getElementById('product-name').innerText = currentProduct.name;
+  document.getElementById('product-price').innerText = "Rs. " + currentProduct.price;
+  document.getElementById('product-desc').innerText = currentProduct.desc;
+  document.title = currentProduct.name + " - Buraq Wear";
+} else {
+  document.getElementById('product-name').innerText = "Product Not Found";
+}
+
+// Size select karne ka code
+document.querySelectorAll('.size-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+
+// Order Now button
+document.querySelector('.order-now-btn').addEventListener('click', function() {
+  const selectedSize = document.querySelector('.size-btn.active');
+  if(!selectedSize) {
+    alert("Please select a size first!");
+    return;
+  }
+  alert(`Order placed for ${currentProduct.name} - Size: ${selectedSize.innerText}`);
+  // Yahan order wala logic ya checkout page ka link add karna
+});
+</script>
+
+</body>
+</html>

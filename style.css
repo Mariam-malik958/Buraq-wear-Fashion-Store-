@@ -1,0 +1,2974 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* === DARK THEME FIXED - IMAGES SHOW HONGI === */
+html, body {
+    background: #0F172A !important;
+}
+
+/* Sirf sections ka background dark, andar ki cheezein nahi */
+body, 
+main,
+section,
+.hero, .hero-section, 
+.banner, .main-banner,
+.container, .container-fluid,
+.row,
+header, footer, .footer {
+    background-color: #0F172A !important;
+}
+
+/* Sab text white */
+body, h1, h2, h3, h4, h5, h6, p, span, div, a, li {
+    color: #FFFFFF !important;
+}
+
+/* Green text wapis green */
+.green-text, .highlight, .text-green, .text-success {
+    color: #4ADE80 !important;
+}
+/* === IMAGE FIX - YE SAB SE ZAROORI HAI === */
+img, 
+.image, 
+.product-img, 
+.banner-img,
+.hero-img {
+    background: transparent !important;
+    background-color: transparent !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Images ke parent div ka background hatao */
+div:has(> img), 
+.img-container, 
+.image-wrapper,
+.product-box,
+.banner-box {
+    background-color: transparent !important;
+    background: transparent !important;
+}
+
+/* Buttons */
+button, .btn, .shop-now, a.btn {
+    background-color: #3B82F6 !important;
+    color: #FFFFFF !important;
+    border: none !important;
+}
+/* === DARK THEME END === */
+
+/* === IMAGE FIX - SAB SE ZAROORI === */
+/* === FOOTER IMAGES SHOW KARO - FINAL === */
+footer, .footer {
+    background: #0F172A !important;
+    color: #F8FAFC !important;
+}
+
+footer *, .footer * {
+    background: transparent !important;
+    color: #F8FAFC !important;
+}
+
+footer img, .footer img {
+    display: inline-block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    background: none !important;
+    /* Black logo ko white bana dega */
+    filter: brightness(0) invert(1) !important;
+    max-width: 200px !important;
+}
+
+/* Payment/Visa/Mastercard ko colorful rehne do */
+footer .payment img, .footer .payment img,
+footer img[src*="pay"], .footer img[src*="pay"] {
+    filter: none !important;
+}
+/* === KHATAM === */
+.hero-img {
+    background: transparent !important;
+    background-color: transparent !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Images ke parent div ka background hatao */
+div:has(> img), 
+.img-container, 
+.image-wrapper,
+.product-box,
+.banner-box {
+    background-color: transparent !important;
+    background: transparent !important;
+}
+
+/* Buttons */
+button, .btn, .shop-now, a.btn {
+    background-color: #3B82F6 !important;
+    color: #FFFFFF !important;
+    border: none !important;
+}
+/* === END === */
+* 
+/* === FORCE DARK THEME - HOME PAGE === */
+html, body, #root, .app {
+    background: #0F172A !important;
+    background-color: #0F172A !important;
+}
+
+/* Home page ka har section dark */
+/* === SAFE DARK THEME - IMAGES SAFE === */
+body, main, section, header, footer {
+    background-color: #0F172A !important;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, li, span {
+    color: #F8FAFC !important;
+}
+
+img {
+    background: none !important;
+    background-color: transparent !important;
+    filter: none !important;
+    opacity: 1 !important;
+}
+/* === END === */
+
+/* Headings extra bright white */
+h1, h2, h3, h4, h5, h6 {
+    color: #F8FAFC !important;
+}
+
+/* "Super value deals" */
+h1, h2, .title, .heading, .hero-title {
+    color: #FFFFFF !important;
+}
+
+/* "On all products" green rakho */
+.green-text, .highlight, .text-green, .text-success {
+    color: #4ADE80 !important;
+}
+
+/* Buttons */
+button, .btn, .shop-now, a.btn {
+    background-color: #3B82F6 !important;
+    color: #FFFFFF !important;
+    border: none !important;
+}
+
+/* Image ka background transparent kar do */
+img {
+    background: transparent !important;
+}
+/* === END === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan',sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+   /* Logo ko black karo aur underline hatao */
+.logo {
+    font-family: 'Pacifico', cursive; /* Cara jaisa stylish font */
+    font-size: 32px;
+    color: #222; /* Pure black */
+    text-decoration: none; /* Underline khatam */
+    font-weight: 400;
+}
+
+/* Hover pe bhi underline na aaye */
+.logo:hover {
+    color: #222; 
+    text-decoration: none;
+}
+/* Shop Now Button Styling */
+.shop-now-btn {
+  background-color: #007BFF;  /* Blue color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  text-align: center;
+  text-decoration: none;  /* agar <a> tag use karo to underline na aaye */
+  transition: 0.3s;
+}
+
+.shop-now-btn:hover {
+  background-color: #0056b3;
+}
+.logo span {
+    color: #088178;
+}
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+.single-product {
+  display: flex;
+  margin-top: 20px;
+  padding: 40px 80px;
+  gap: 50px;
+}
+
+.product-img-box {
+  width: 40%;
+}
+
+#main-img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product-details-box {
+  width: 50%;
+  padding-top: 30px;
+}
+
+.product-details-box h4 {
+  padding: 20px 0 10px 0;
+}
+
+.product-details-box h2 {
+  font-size: 26px;
+}
+
+.size-options {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0 20px 0;
+}
+
+.size-btn {
+  padding: 10px 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.size-btn.active,.size-btn:hover {
+  background: #088178;
+  color: #fff;
+  border: 1px solid #088178;
+}
+
+.quantity {
+  width: 50px;
+  height: 47px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.order-now-btn {
+  background: #088178;
+  color: #fff;
+  padding: 14px 30px;
+  border: none;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.order-now-btn:hover {
+  background: #066963;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12x;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+button.white {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+body {
+    width: 100%;
+}
+
+/* Header Start */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease; 
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#close {
+    display: none;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+/* Home Page */
+
+#hero {
+    height: 90vh;
+    width: 100%;
+    background-color: #e3e6f3;
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-text {
+    flex-basis: 40%;
+    z-index: 2;
+}
+
+.hero-text h4 {
+    padding-bottom: 15px;
+    font-size: 16px;
+    color: #222;
+    font-weight: 600;
+}
+
+.hero-text h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+    font-weight: 700;
+    margin: 0;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #088178;
+    font-weight: 700;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.hero-text button {
+    background-color: #fddde4;
+    color: #088178;
+    border: 0;
+    padding: 14px 35px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#hero img {
+    height: 90vh; /* Section jitni height */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.hero-text h4 {
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
+.hero-text h2 {
+    font-size: 46px;
+    line-height: 54px;
+}
+
+.hero-text h1 {
+    color: #088178;
+    font-size: 50px;
+    line-height: 64px;
+}
+
+.hero-text button {
+    background-image: url("images/button.png");
+    background-color: transparent;
+    color: #088178;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.hero-image {
+    flex-basis: 50%;
+    text-align: right;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+#hero h4 {
+    padding-bottom: 15px;
+}
+
+#hero h1 {
+    color: #088178;
+}
+
+#hero button {
+    background-image: url(images/button.png);
+    background-color: transparent;
+    color: #088178;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .fe-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .fe-box:hover {
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#feature .fe-box h6 {
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+}
+
+#feature .fe-box:nth-child(2) h6 {
+    background-color: #cdebbc;
+}
+
+#feature .fe-box:nth-child(3) h6 {
+    background-color: #d1e8f2;
+}
+
+#feature .fe-box:nth-child(4) h6 {
+    background-color: #cdd4f8;
+}
+
+#feature .fe-box:nth-child(5) h6 {
+    background-color: #f6dbf6;
+}
+
+#feature .fe-box:nth-child(6) h6 {
+    background-color: #fff2e5;
+}
+
+#product1 {
+    text-align: center;
+}
+
+#product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .pro img {
+    width: 100%;
+    border-radius: 20px;   
+}
+
+#product1 .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span {
+    color: #606063;
+    font-size: 12px;
+}
+
+#product1 .pro .des h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+#product1 .pro .des i {
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+
+#product1 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+
+#product1 .pro .cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(images/banner/b2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 40vh;
+}
+
+#banner h4 {
+    color: #fff;
+    font-size: 16px;
+}
+
+#banner h2 {
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#banner h2 span {
+    color: #ef3636;
+}
+
+#banner button:hover {
+    background-color: #088178;
+    color: #fff;
+}
+
+#sm-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sm-banner .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    background-image: url(images/banner/b17.jpg);
+    background-size: cover;
+    background-position: center;
+    min-width: 850px;
+    height: 50vh;
+    padding: 30px;
+}
+
+#sm-banner h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#sm-banner h2 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+#sm-banner span  {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#sm-banner .banner-box:hover button{
+    background-color: #088178;
+    border: 1px solid #088178;
+}
+
+#sm-banner .banner-box:nth-child(2) {
+    background-image: url(images/banner/b10.jpg);
+}
+
+#banner3 .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    background-image: url(images/banner/b7.jpg);
+    background-size: cover;
+    background-position: center;
+    min-width: 30%;
+    height: 30vh;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+#banner3 .banner-box:nth-child(2) {
+    background-image: url(images/banner/b4.jpg);
+}
+
+#banner3 .banner-box:nth-child(3) {
+    background-image: url(images/banner/b18.jpg);
+}
+
+#banner3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;   
+}
+
+#banner3 h2 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+#banner3 h3 {
+    color: #ec544e;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(images/banner/b14.png);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+}
+
+#newsletter h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+
+#newsletter p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #818EA0;
+}
+
+#newsletter p span{ 
+    color: #ffbd27;
+}
+
+#newsletter .form {
+    display: flex;
+    width: 40%;
+}
+
+#newsletter input {
+    height: 3.125rem;
+    padding: 0 1.25rem;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletter button {
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo {
+    margin-bottom: 30px;
+}
+
+footer h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin: 0 0 10px 0;
+}
+
+footer .follow {
+    margin-top: 20px;
+}
+
+footer .follow i{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .install .row img{
+    border: 1px solid #088178;
+    border-radius: 6px;
+    margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover {
+    color: #088178;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+
+/* Shop Page */
+
+#page-header {
+    background-image: url(images/banner/b1.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h2,
+#page-header p {
+    color: #fff;
+}
+
+#pagination {
+    text-align: center;
+}
+
+#pagination a {
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+
+#pagination a i {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Single Product Page */
+
+#productdetails {
+    display: flex;
+    margin-top: 20px;
+}
+
+#productdetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+}
+
+.small-image-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#productdetails .single-pro-details {
+    width: 50%;
+    padding-top: 30px;
+}
+
+#productdetails .single-pro-details h4 {
+    padding: 40px 0 20px 0;
+}
+
+#productdetails .single-pro-details h2 {
+    font-size: 26px;
+}
+
+#productdetails .single-pro-details select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#productdetails .single-pro-details input {
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#productdetails .single-pro-details button {
+    background-color: #088178;
+    color: #fff;
+}
+
+#productdetails .single-pro-details input:focus {
+    outline: none;
+}
+
+#productdetails .single-pro-details span {
+    line-height: 25px;
+}
+
+/* Blog Page */
+
+#page-header.blog-header {
+    #page-header.blog-header {
+    background-image: url(images/banner/b19.jpg);
+    height: 300px;              /* Banner ki height fix karo */
+    width: 100%;
+    background-size: cover;     /* Image ko stretch/crop karke poora cover karega */
+    background-position: center; /* Center se crop hoga */
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}
+
+#blog {
+    padding: 150px 150px 0 150px;
+}
+
+#blog .blog-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 90px;
+}
+
+#blog .blog-img {
+    width: 50%;
+    margin-right: 40px;
+}
+
+#blog img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+#blog .blog-details {
+    width: 50%;
+}
+
+#blog .blog-details a {
+    text-decoration: none;
+    font-size: 11px;
+    color: #000;
+    font-weight: 700;
+    position: relative;
+    transition: 0.3s;
+}
+
+#blog .blog-details a::after {
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 4px;
+    right: -60px;
+}
+
+#blog .blog-details a:hover {
+    color: #088178;
+}
+
+#blog .blog-details a:hover::after {
+    background-color: #088178;
+}
+
+#blog .blog-box h1 {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    color: #c9cbce;
+    z-index: -9;
+}
+
+/* About Page */
+
+#page-header.about-header {
+    background-image: url(images/about/banner.png);
+}
+
+#about-head {
+    display: flex;
+    align-items: center;
+}
+
+#about-head img {
+    width: 50%;
+    height: auto;
+}
+
+#about-head div {
+    padding-left: 40px;
+}
+
+
+#about-app {
+    text-align: center;
+}
+
+#about-app .video {
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+} 
+
+#about-app .video video {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* Contact Page */
+
+#contact-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact-details .details {
+    width: 40%;
+}
+
+#contact-details .details span,
+#form-details form span {
+    font-size: 12px;
+}
+
+#contact-details .details h2,
+#form-details form h2 {
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+#contact-details .details h3 {
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+#contact-details .details li {
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+}
+
+#contact-details .details li i {
+    font-size: 14px;
+    padding-right: 22px;
+}
+
+#contact-details .details li p {
+    margin: 0;
+    font-size: 14px;
+}
+
+#contact-details .map {
+    width: 55%;
+    height: 400px;
+}
+
+#contact-details .map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#form-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px;
+    border: 1px solid #e1e1e1;
+}
+
+#form-details form {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#form-details form input,
+#form-details form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+}
+
+#form-details form button {
+    background-color: #088178;
+    color: #fff;
+}
+
+#form-details .people div {
+    padding-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+
+#form-details .people div img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+#form-details .people div p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+#form-details .people div span {
+    display: block;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Cart Page */
+
+#cart {
+    overflow-x: auto;
+}
+
+#cart table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table img {
+    width: 70px;
+}
+
+#cart table td:nth-child(1) {
+    width: 100px;
+    text-align: center;
+}
+
+#cart table td:nth-child(2) {
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(3) {
+    width: 250px;
+    text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+
+#cart table thead {
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+
+#cart table thead td {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+
+#cart table tbody tr td {
+    padding-top: 15px;
+}
+
+#cart table tbody td {
+    font-size: 13px;
+}
+
+#cart-add {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#cart-add .coupon {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+#cart-add .coupon h3,
+#cart-add .subtotal h3 {
+    padding-bottom: 15px;
+}
+ 
+#cart-add .coupon input {
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #e2e9e1;
+}
+
+#cart-add .coupon button,
+#cart-add .subtotal button {
+    background-color: #088178;
+    color: #fff;
+    padding: 12px 20px;
+}
+
+#cart-add .subtotal {
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+}
+
+#cart-add .subtotal table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#cart-add .subtotal table td {
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+}
+
+/* Media Query */
+
+@media (max-width: 799px) {
+    .section-p1 {
+        padding: 40px 40px;
+    } 
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+
+    #lg-bag {
+        display: none;
+    }
+
+    #hero {
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+
+    #feature {
+        justify-content: center;
+    }
+
+    #feature .fe-box {
+        margin: 15px 15px;
+    }
+
+    #product1 .pro-container {
+        justify-content: center;
+    }
+
+    #product1 .pro {
+        margin: 15px;
+    }
+
+    #banner {
+        height: 20vh;
+    }
+
+    #sm-banner .banner-box {
+        min-height: 100%;
+        height: 30vh;
+    }
+
+    #banner3 {
+        padding: 0 40px;
+    }
+
+    #banner3 .banner-box {
+        width: 28%;
+    }
+
+    #newsletter .form {
+        width: 70%;
+    }
+
+    /* Contact Page */
+
+    #form-details {
+        padding: 40px;
+    }
+
+    #form-details form {
+        width: 50%;
+    }
+}
+
+@media (max-width: 477px) {
+    .section-p1 {
+        padding: 20px;
+    }
+
+    #header {
+        padding: 10px 30px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    #hero {
+        padding: 0 20px;
+        background-position: 55%;
+    }
+
+    #feature {
+        justify-content: space-between;
+    }
+
+    #feature .fe-box {
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+
+    #product .pro {
+        width: 100%;
+    }
+    
+    #banner {
+        height: 40vh;
+    }
+
+    #sm-banner .banner-box {
+        height: 40vh;
+        margin-bottom: 20px;
+    }
+
+    #banner3 {
+        padding: 0 20px;
+    }
+
+    #banner3 .banner-box {
+        width: 100%;
+    }
+
+    #newsletter {
+        padding: 40px 20px;
+    }
+
+    #newsletter .form {
+        width: 100%;
+    }
+
+    footer .copyright {
+        text-align: start;
+    }
+
+    /* Single Product */
+    #productdetails {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #productdetails .single-pro-image {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    #productdetails .single-pro-details {
+        width: 100%;
+    }
+
+    /* Blog Page */
+    #blog {
+        padding: 100px 20px 0 20px;
+    }
+
+    #blog .blog-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #blog .blog-img {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    #blog .blog-details {
+        width: 100%;
+    }
+
+    /* About Page */
+    
+    #about-head {
+        flex-direction: column;
+    }
+
+    #about-head img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #about-head div {
+        padding-left: 0px;
+    }
+
+    #about-app .video {
+        width: 100%;
+    }
+
+    /* Contact Page */
+
+    #contact-details {
+        flex-direction: column;
+    }
+
+    #contact-details .details {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #contact-details .map {
+        width: 100%;
+    }
+
+    #form-details {
+        margin: 10px;
+        padding: 30px 10px;
+        flex-wrap: wrap;
+    }
+
+    #form-details form {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /* Cart Page */
+
+    #cart-add {
+        flex-direction: column;
+    }
+
+    #cart-add .coupon {
+        width: 100%;
+    }
+
+    #cart-add .subtotal {
+        width: 100%;
+        padding: 20px;
+    }
+}
+.page-header h2 {
+    color: #ffffff; /* Heading ka color */
+}
+
+.page-header p {
+    color: #f1f1f1; /* Message ka color */
+}
+/* Contact Page Banner with Image */
+.page-header {
+    background-image: url("https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh; /* Banner ki height */
+}
+/* Professional Full Page Account */
+#account-page-full {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.account-left {
+    background: linear-gradient(135deg, #0D9488 0%, #0F172A 100%) !important; /* Teal se Dark Navy gradient */
+    color: #F1F5F9 !important;
+    padding: 60px 50px !important;
+}
+.account-text {
+    max-width: 450px;
+}
+
+.account-text h2 {
+    font-size: 42px;
+    line-height: 54px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.account-text p {
+    font-size: 16px;
+    color: #e1e1e1;
+}
+
+.account-right {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+
+.account-box-full {
+    width: 450px;
+    padding: 20px;
+}
+
+.form-toggle {
+    display: flex;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.form-toggle button {
+    background: none;
+    border: none;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #888;
+    border-bottom: 3px solid transparent;
+    flex: 1;
+}
+
+.form-toggle .active-toggle {
+    color: #088178;
+    border-bottom: 3px solid #088178;
+}
+
+.account-box-full form {
+    display: none;
+}
+
+.account-box-full .form-active {
+    display: block;
+}
+
+.account-box-full h3 {
+    text-align: left;
+    margin-bottom: 25px;
+    color: #222;
+    font-size: 24px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group i {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    color: #888;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 15px 14px 45px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+}
+
+.input-group input:focus {
+    border-color: #088178;
+}
+
+.form-extra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.form-extra label {
+    color: #555;
+    cursor: pointer;
+}
+
+.forgot-pass {
+    color: #088178;
+    text-decoration: none;
+}
+
+.form-btn {
+    width: 100%;
+    padding: 15px;
+    background: #088178;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-btn:hover {
+    background: #066a63;
+}
+
+.terms {
+    text-align: center;
+    font-size: 13px;
+    color: #777;
+    margin-top: 20px;
+}
+
+.terms a {
+    color: #088178;
+}
+
+#RegForm {
+    display: none;
+}
+
+/* Mobile Responsive */
+@media (max-width: 900px) {
+    #account-page-full {
+        flex-direction: column;
+    }
+    .account-left {
+        display: none;
+    }
+    .account-right {
+        flex-basis: 100%;
+        padding: 60px 20px;
+    }
+    .account-box-full {
+        width: 100%;
+    }
+}
+.blog-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+} 
+/* === DARK THEME START === */
+body {
+    background-color: #0F172A !important;
+    color: #E2E8F0 !important;
+}
+/* DARK THEME END */
+
+* 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === HERO SECTION FIX - YAHAN DAAL DE === */
+.hero-section, .banner-section, .main-banner {
+    background-color: #0F172A !important;
+    color: #FFFFFF !important;
+}
+
+.hero-section h1, .hero-section p {
+    color: #F8FAFC !important;
+}
+
+.hero-section .highlight, .hero-section .green-text {
+    color: #4ADE80 !important; /* "On all products" green rahega */
+}
+/* === HERO SECTION END === */
+
+
+/* Iske baad tera purana CSS start ho raha hoga */
+/* Mobile Responsive */
+/* === FOOTER TEXT LIGHT - ALL PAGES === */
+footer, 
+.footer, 
+footer *, 
+.footer *,
+footer p, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6,
+footer span, footer a, footer li, footer div,
+.footer p, .footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6,
+.footer span, .footer a, .footer li, .footer div {
+    color: #E2E8F0 !important; /* Light grey - sab pages pe apply hoga */
+}
+
+/* Footer headings extra bright */
+footer h3, footer h4, .footer h3, .footer h4, .footer-title {
+    color: #F8FAFC !important; /* Bilkul white */
+    font-weight: 600 !important;
+}
+
+/* Footer links hover */
+footer a:hover, .footer a:hover {
+    color: #60A5FA !important; /* Blue hover effect */
+}
+
+/* Copyright/bottom text */
+footer .copyright, .footer-bottom, .footer .copyright {
+    color: #94A3B8 !important;
+}
+@media (max-width: 900px) {
+    /* ... responsive code ... */
+}  /* ye khatam hone ke baad */
+
+/* === FOOTER TEXT LIGHT - ALL PAGES === */
+/* Footer ka background dark */
+   footer, .footer {
+       background-color: #0F172A !important;
+   }
+
+   /* Footer ka sirf text white - images ko mat chhedo */
+   footer h1, footer h2, footer h3, footer h4, footer p, 
+   footer a, footer li, footer span,
+   .footer h1, .footer h2, .footer h3, .footer h4, .footer p, 
+   .footer a, .footer li, .footer span {
+       color: #F8FAFC !important;
+       background: transparent !important;
+   }
+
+/* === FOOTER BANNER IMAGES FIX === */
+footer img,
+.footer img,
+footer .banner,
+.footer .banner,
+footer .banner img,
+.footer .banner img,
+footer [class*="banner"] img,
+.footer [class*="banner"] img {
+    all: unset !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    background: none !important;
+    background-color: transparent !important;
+    filter: none !important;
+    object-fit: contain !important;
+}
+
+/* Agar banner div ka background image hai */
+footer .banner,
+.footer .banner,
+footer [class*="banner"] {
+    background-color: transparent !important;
+    opacity: 1 !important;
+    display: block !important;
+}
+/* === END === */
+footer .banner, .footer .banner {
+    min-height: 100px !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+}
+/* === FOOTER IMAGES SHOW KARO - FINAL NUCLEAR === */
+footer img,
+.footer img,
+footer .banner img,
+.footer .banner img,
+footer [class*="logo"] img,
+footer [class*="banner"] img {
+    all: unset !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    filter: none !important; 
+    background: none !important;
+    width: auto !important;
+    height: auto !important;
+    max-width: 100% !important;
+    position: static !important;
+}
+
+/* Footer me div ka background remove karo */
+footer div,
+.footer div,
+footer .banner,
+.footer .banner {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+/* === KHATAM === */
+/* === FOOTER BANNER FIX - FINAL === */
+footer {
+    background: #0F172A !important;
+    padding: 40px 80px !important;
+}
+
+.footer-content {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 30px !important;
+}
+
+.footer-banner {
+    background: transparent !important;
+}
+
+.footer-banner img {
+    all: unset !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: 500px !important;
+    height: auto !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    filter: none !important;
+}
+/* === KHATAM === */
+
+
+/* === BANNER EXACT ADJUST AS PER IMAGE === */
+.promo-banner {
+    position: relative !important;
+    width: 100% !important;
+    height: 450px !important;
+    overflow: hidden !important;
+    margin: 20px 0 !important;
+}
+
+.promo-banner .banner-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center right !important; /* Image ko right me shift kiya */
+    display: block !important;
+}
+
+/* Left side dark gradient taake text dikhe */
+.banner-overlay {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 45% !important;
+    height: 100% !important;
+    background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%) !important;
+    z-index: 1 !important;
+}
+
+/* Text ko left-bottom me adjust kiya jese image me hai */
+.banner-content {
+    position: absolute !important;
+    bottom: 60px !important;
+    left: 50px !important;
+    z-index: 2 !important;
+    color: #FFFFFF !important;
+}
+
+.banner-content h4 {
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    color: #E2E8F0 !important;
+    margin: 0 0 8px 0 !important;
+    text-transform: lowercase !important;
+}
+
+.banner-content h2 {
+    font-size: 38px !important;
+    font-weight: 700 !important;
+    color: #FFFFFF !important;
+    line-height: 1.1 !important;
+    margin: 0 0 10px 0 !important;
+}
+
+.banner-content p {
+    font-size: 14px !important;
+    color: #CBD5E1 !important;
+    margin: 0 0 20px 0 !important;
+    max-width: 320px !important;
+    line-height: 1.4 !important;
+}
+
+.banner-btn {
+    background: transparent !important;
+    color: #FFFFFF !important;
+    border: 1px solid #FFFFFF !important;
+    padding: 8px 22px !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    transition: 0.3s !important;
+}
+
+.banner-btn:hover {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+}
+
+/* Mobile ke liye */
+@media (max-width: 799px) {
+    .promo-banner {
+        height: 380px !important;
+    }
+    .banner-content {
+        left: 20px !important;
+        bottom: 30px !important;
+    }
+    .banner-content h2 {
+        font-size: 28px !important;
+    }
+    .banner-overlay {
+        width: 100% !important;
+        background: rgba(0,0,0,0.55) !important;
+    }
+}
+/* === KHATAM === */
+
+/* === BANNER LAYOUT EXACT AS PER SCREENSHOT === */
+
+/* Upar wala bara banner */
+.banner-top {
+    position: relative !important;
+    width: 100% !important;
+    height: 450px !important;
+    overflow: hidden !important;
+    margin-bottom: 20px !important;
+}
+
+.banner-top .banner-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block !important;
+}
+
+.banner-top .banner-overlay {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 40% !important;
+    height: 100% !important;
+    background: linear-gradient(90deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%) !important;
+    z-index: 1 !important;
+}
+
+.banner-top .banner-content {
+    position: absolute !important;
+    bottom: 50px !important;
+    left: 50px !important;
+    z-index: 2 !important;
+    color: #FFFFFF !important;
+}
+
+.banner-top .banner-content h4 {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    color: #E2E8F0 !important;
+    margin: 0 0 6px 0 !important;
+}
+
+.banner-top .banner-content h2 {
+    font-size: 36px !important;
+    font-weight: 700 !important;
+    color: #FFFFFF !important;
+    margin: 0 0 8px 0 !important;
+}
+
+.banner-top .banner-content p {
+    font-size: 14px !important;
+    color: #CBD5E1 !important;
+    margin: 0 0 18px 0 !important;
+    max-width: 300px !important;
+}
+
+.banner-btn {
+    background: transparent !important;
+    color: #FFFFFF !important;
+    border: 1px solid #FFFFFF !important;
+    padding: 8px 20px !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+}
+
+.banner-btn:hover {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+}
+
+/* Neeche wale 2 chhote banner */
+.banner-bottom {
+    display: flex !important;
+    width: 100% !important;
+    gap: 20px !important;
+    margin-bottom: 30px !important;
+}
+
+.small-banner-left, .small-banner-right {
+    position: relative !important;
+    width: 50% !important;
+    height: 280px !important;
+    overflow: hidden !important;
+    border-radius: 6px !important;
+}
+
+.small-banner-left img, .small-banner-right img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+}
+
+.small-banner-content {
+    position: absolute !important;
+    bottom: 20px !important;
+    left: 20px !important;
+    z-index: 2 !important;
+    color: #FFFFFF !important;
+}
+
+/* Right banner me text right side */
+.small-banner-content.right-text {
+    left: auto !important;
+    right: 20px !important;
+    text-align: right !important;
+}
+
+.small-banner-content h3 {
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    color: #FFFFFF !important;
+    margin: 0 0 4px 0 !important;
+    text-transform: uppercase !important;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.8) !important;
+}
+
+.small-banner-content p {
+    font-size: 13px !important;
+    color: #F1F5F9 !important;
+    margin: 0 !important;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.8) !important;
+}
+
+/* Mobile responsive */
+@media (max-width: 799px) {
+    .banner-top {
+        height: 350px !important;
+    }
+    .banner-top .banner-content {
+        right: 50px !important; 
+        bottom :50px !important;
+    }
+    .banner-top .banner-content h2 {
+        font-size: 280px !important;
+    }
+    
+    .banner-bottom {
+        flex-direction: column !important;
+    }
+/* === BANNER LAYOUT EXACT AS PER SCREENSHOT === */
+
+/* Upar wala bara banner */
+.banner-top {
+    position: relative !important;
+    width: 100% !important;
+    height: 450px !important;
+    overflow: hidden !important;
+    margin-bottom: 20px !important;
+}
+
+.banner-top .banner-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block !important;
+}
+
+.banner-top .banner-overlay {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 40% !important;
+    height: 100% !important;
+    background: linear-gradient(90deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 100%) !important;
+    z-index: 1 !important;
+}
+
+.banner-top .banner-content {
+    position: absolute !important;
+    bottom: 50px !important;
+    left: 50px !important;
+    z-index: 2 !important;
+    color: #FFFFFF !important;
+}
+
+.banner-top .banner-content h4 {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    color: #E2E8F0 !important;
+    margin: 0 0 6px 0 !important;
+}
+
+.banner-top .banner-content h2 {
+    font-size: 36px !important;
+    font-weight: 700 !important;
+    color: #FFFFFF !important;
+    margin: 0 0 8px 0 !important;
+}
+
+.banner-top .banner-content p {
+    font-size: 14px !important;
+    color: #CBD5E1 !important;
+    margin: 0 0 18px 0 !important;
+    max-width: 300px !important;
+}
+
+.banner-btn {
+    background: transparent !important;
+    color: #FFFFFF !important;
+    border: 1px solid #FFFFFF !important;
+    padding: 8px 20px !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+}
+
+.banner-btn:hover {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+}
+
+/* Neeche wale 2 chhote banner */
+.banner-bottom {
+    display: flex !important;
+    width: 100% !important;
+    gap: 20px !important;
+    margin-bottom: 30px !important;
+}
+
+.small-banner-left, .small-banner-right {
+    position: relative !important;
+    width: 50% !important;
+    height: 280px !important;
+    overflow: hidden !important;
+    border-radius: 6px !important;
+}
+
+.small-banner-left img, .small-banner-right img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+}
+
+.small-banner-content {
+    position: absolute !important;
+    bottom: 20px !important;
+    left: 20px !important;
+    z-index: 2 !important;
+    color: #FFFFFF !important;
+}
+
+/* Right banner me text right side */
+.small-banner-content.right-text {
+    left: auto !important;
+    right: 20px !important;
+    text-align: right !important;
+}
+
+.small-banner-content h3 {
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    color: #FFFFFF !important;
+    margin: 0 0 4px 0 !important;
+    text-transform: uppercase !important;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.8) !important;
+}
+
+.small-banner-content p {
+    font-size: 13px !important;
+    color: #F1F5F9 !important;
+    margin: 0 !important;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.8) !important;
+}
+
+/* Mobile responsive */
+@media (max-width: 799px) {
+    .banner-top {
+        height: 350px !important;
+    }
+    .banner-top .banner-content {
+        left: 20px !important;
+        bottom: 30px !important;
+    }
+    .banner-top .banner-content h2 {
+        font-size: 28px !important;
+    }
+    
+    .banner-bottom {
+        flex-direction: column !important;
+    }
+.small-banner-left, .small-banner-right {
+    position: relative !important;
+    width: 50% !important;
+    height: 280px !important;
+    overflow: hidden !important;
+    border-radius: 6px !important;
+}
+
+.small-banner-left img, .small-banner-right img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+}
+
+/* Upar wali image jesa gradient neeche wali pe bhi */
+.small-banner-left, .small-banner-right {
+    position: relative !important;
+    width: 50% !important;
+    height: 420px !important; /* Ye line add kar - Desktop ki height */
+    overflow: hidden !important;
+    border-radius: 6px !important;
+}
+/* Text ko left-bottom me adjust kiya */
+.small-banner-content {
+    position: absolute !important;
+    bottom: 25px !important;
+    left: 25px !important;
+    z-index: 2 !important;
+    color: #FFFFFF !important;
+}
+
+.small-banner-content h3 {
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    color: #FFFFFF !important;
+    margin: 0 0 4px 0 !important;
+    text-transform: uppercase !important;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.8) !important;
+}
+
+.small-banner-content p {
+    font-size: 13px !important;
+    color: #F1F5F9 !important;
+    margin: 0 !important;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.8) !important;
+}
+
+
+}
+
+
+}
+.small-banner-left, .small-banner-right {
+    position: relative !important; /* Ye sabse zaruri hai */
+}
+
+.small-banner-content {
+    position: absolute !important;
+    bottom: 30px !important;
+    left: 25px !important;
+    z-index: 2 !important; /* Ye na ho to text image ke peeche chala jata hai */
+    color: #FFFFFF !important;
+}
+
+.small-banner-content h3 {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    color: #FFFFFF !important;
+    margin: 0 0 5px 0 !important;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.9) !important;
+}
+
+.small-banner-content p {
+    font-size: 14px !important;
+    color: #F1F5F9 !important;
+    margin: 0 !important;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.9) !important;
+}
+
+
+/* === ACCOUNT PAGE FULL DARK THEME === */
+
+/* 1. Poore page ka background dark */
+.account-page {
+    background: #0F172A !important; /* Dark navy */
+    min-height: 100vh !important;
+}
+
+/* 2. Left side - Teal ko Dark Slate kiya */
+.account-left {
+    background: #1E293B !important; /* Dark slate */
+    color: #F1F5F9 !important;
+}
+
+.account-left h2 {
+    color: #FFFFFF !important;
+    text-shadow: none !important;
+}
+
+.account-left p {
+    color: #CBD5E1 !important; /* Light grey */
+}
+
+/* 3. Right side - White ko Dark kiya */
+.account-right {
+    background: #1E293B !important; /* White se dark */
+    border: 1px solid #334155 !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4) !important;
+}
+
+/* 4. Input fields dark */
+.account-right input {
+    background: #0F172A !important; /* Dark input */
+    border: 1px solid #334155 !important;
+    color: #F1F5F9 !important;
+    outline: none !important;
+}
+
+.account-right input:focus {
+    border: 1px solid #0D9488 !important; /* Focus pe teal border */
+    box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.1) !important;
+}
+
+.account-right input::placeholder {
+    color: #64748B !important; /* Placeholder light */
+}
+
+/* 5. Labels aur text */
+.account-right label,
+.account-right .remember-me,
+.account-right .forgot-pass {
+    color: #CBD5E1 !important;
+}
+
+.account-right .forgot-pass:hover {
+    color: #0D9488 !important;
+}
+
+/* 6. Login/Register Tabs */
+.account-right .tab-btn {
+    background: #0F172A !important;
+    color: #94A3B8 !important;
+    border: 1px solid #334155 !important;
+}
+
+.account-right .tab-btn.active {
+    background: #0D9488 !important; /* Active tab teal */
+    color: #FFFFFF !important;
+    border: 1px solid #0D9488 !important;
+}
+
+/* 7. Login Button */
+.account-right .login-btn {
+    background: #0D9488 !important;
+    color: #FFFFFF !important;
+}
+
+.account-right .login-btn:hover {
+    background: #0F766E !important; /* Hover pe dark teal */
+}
+
+/* 8. Header bhi dark kar de is page pe */
+body:has(.account-page) #header {
+    background: #0F172A !important;
+    border-bottom: 1px solid #1E293B !important;
+}
+
+body:has(.account-page) #navbar li a {
+    color: #CBD5E1 !important;
+}/* === ACCOUNT PAGE FULL DARK THEME === */
+
+/* 1. Poore page ka background dark */
+.account-page {
+    background: #0F172A !important; /* Dark navy */
+    min-height: 100vh !important;
+}
+
+/* 2. Left side - Teal ko Dark Slate kiya */
+.account-left {
+    background: #1E293B !important; /* Dark slate */
+    color: #F1F5F9 !important;
+}
+
+.account-left h2 {
+    color: #FFFFFF !important;
+    text-shadow: none !important;
+}
+
+.account-left p {
+    color: #CBD5E1 !important; /* Light grey */
+}
+
+/* 3. Right side - White ko Dark kiya */
+.account-right {
+    background: #1E293B !important; /* White se dark */
+    border: 1px solid #334155 !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4) !important;
+}
+
+/* 4. Input fields dark */
+.account-right input {
+    background: #0F172A !important; /* Dark input */
+    border: 1px solid #334155 !important;
+    color: #F1F5F9 !important;
+    outline: none !important;
+}
+
+.account-right input:focus {
+    border: 1px solid #0D9488 !important; /* Focus pe teal border */
+    box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.1) !important;
+}
+
+.account-right input::placeholder {
+    color: #64748B !important; /* Placeholder light */
+}
+
+/* 5. Labels aur text */
+.account-right label,
+.account-right .remember-me,
+.account-right .forgot-pass {
+    color: #CBD5E1 !important;
+}
+
+.account-right .forgot-pass:hover {
+    color: #0D9488 !important;
+}
+
+/* 6. Login/Register Tabs */
+.account-right .tab-btn {
+    background: #0F172A !important;
+    color: #94A3B8 !important;
+    border: 1px solid #334155 !important;
+}
+
+.account-right .tab-btn.active {
+    background: #0D9488 !important; /* Active tab teal */
+    color: #FFFFFF !important;
+    border: 1px solid #0D9488 !important;
+}
+
+/* 7. Login Button */
+.account-right .login-btn {
+    background: #0D9488 !important;
+    color: #FFFFFF !important;
+}
+
+.account-right .login-btn:hover {
+    background: #0F766E !important; /* Hover pe dark teal */
+}
+
+/* 8. Header bhi dark kar de is page pe */
+body:has(.account-page) #header {
+    background: #0F172A !important;
+    border-bottom: 1px solid #1E293B !important;
+}
+
+body:has(.account-page) #navbar li a {
+    color: #CBD5E1 !important;
+}
+/* === ACCOUNT PAGE FULL DARK THEME === */
+
+/* 1. Poore page ka background dark */
+.account-page {
+    background: #0F172A !important; /* Dark navy */
+    min-height: 100vh !important;
+}
+
+/* 2. Left side - Teal ko Dark Slate kiya */
+.account-left {
+    background: #1E293B !important; /* Dark slate */
+    color: #F1F5F9 !important;
+}
+
+.account-left h2 {
+    color: #FFFFFF !important;
+    text-shadow: none !important;
+}
+
+.account-left p {
+    color: #CBD5E1 !important; /* Light grey */
+}
+
+/* 3. Right side - White ko Dark kiya */
+.account-right {
+    background: #1E293B !important; /* White se dark */
+    border: 1px solid #334155 !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4) !important;
+}
+
+/* 4. Input fields dark */
+.account-right input {
+    background: #0F172A !important; /* Dark input */
+    border: 1px solid #334155 !important;
+    color: #F1F5F9 !important;
+    outline: none !important;
+}
+
+.account-right input:focus {
+    border: 1px solid #0D9488 !important; /* Focus pe teal border */
+    box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.1) !important;
+}
+
+.account-right input::placeholder {
+    color: #64748B !important; /* Placeholder light */
+}
+
+/* 5. Labels aur text */
+.account-right label,
+.account-right .remember-me,
+.account-right .forgot-pass {
+    color: #CBD5E1 !important;
+}
+
+.account-right .forgot-pass:hover {
+    color: #0D9488 !important;
+}
+
+/* 6. Login/Register Tabs */
+.account-right .tab-btn {
+    background: #0F172A !important;
+    color: #94A3B8 !important;
+    border: 1px solid #334155 !important;
+}
+
+.account-right .tab-btn.active {
+    background: #0D9488 !important; /* Active tab teal */
+    color: #FFFFFF !important;
+    border: 1px solid #0D9488 !important;
+}
+
+/* 7. Login Button */
+.account-right .login-btn {
+    background: #0D9488 !important;
+    color: #FFFFFF !important;
+}
+
+.account-right .login-btn:hover {
+    background: #0F766E !important; /* Hover pe dark teal */
+}
+
+/* 8. Header bhi dark kar de is page pe */
+body:has(.account-page) #header {
+    background: #0F172A !important;
+    border-bottom: 1px solid #1E293B !important;
+}
+
+body:has(.account-page) #navbar li a {
+    color: #CBD5E1 !important;
+}
+
+/* === ACCOUNT PAGE FULL DARK THEME === */
+
+/* 1. Poore page ka background dark */
+.account-page {
+    background: #0F172A !important; /* Dark navy */
+    min-height: 100vh !important;
+}
+
+/* 2. Left side - Teal ko Dark Slate kiya */
+.account-left {
+    background: #1E293B !important; /* Dark slate */
+    color: #F1F5F9 !important;
+}
+
+.account-left h2 {
+    color: #FFFFFF !important;
+    text-shadow: none !important;
+}
+
+.account-left p {
+    color: #CBD5E1 !important; /* Light grey */
+}
+
+/* 3. Right side - White ko Dark kiya */
+.account-right {
+    background: #1E293B !important; /* White se dark */
+    border: 1px solid #334155 !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4) !important;
+}
+
+/* 4. Input fields dark */
+.account-right input {
+    background: #0F172A !important; /* Dark input */
+    border: 1px solid #334155 !important;
+    color: #F1F5F9 !important;
+    outline: none !important;
+}
+
+.account-right input:focus {
+    border: 1px solid #0D9488 !important; /* Focus pe teal border */
+    box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.1) !important;
+}
+
+.account-right input::placeholder {
+    color: #64748B !important; /* Placeholder light */
+}
+
+/* 5. Labels aur text */
+.account-right label,
+.account-right .remember-me,
+.account-right .forgot-pass {
+    color: #CBD5E1 !important;
+}
+
+.account-right .forgot-pass:hover {
+    color: #0D9488 !important;
+}
+
+/* 6. Login/Register Tabs */
+.account-right .tab-btn {
+    background: #0F172A !important;
+    color: #94A3B8 !important;
+    border: 1px solid #334155 !important;
+}
+
+.account-right .tab-btn.active {
+    background: #0D9488 !important; /* Active tab teal */
+    color: #FFFFFF !important;
+    border: 1px solid #0D9488 !important;
+}
+
+/* 7. Login Button */
+.account-right .login-btn {
+    background: #0D9488 !important;
+    color: #FFFFFF !important;
+}
+
+.account-right .login-btn:hover {
+    background: #0F766E !important; /* Hover pe dark teal */
+}
+
+/* 8. Header bhi dark kar de is page pe */
+body:has(.account-page) #header {
+    background: #0F172A !important;
+    border-bottom: 1px solid #1E293B !important;
+}
+
+body:has(.account-page) #navbar li a {
+    color: #CBD5E1 !important;
+}
+
+body:has(.account-page) #navbar li a:hover,
+body:has(.account-page) #navbar li a.active {
+    color: #0D9488 !important;
+}
+
+body:has(.account-page) .logo {
+    color: #FFFFFF !important;
+}
+/* === ACCOUNT PAGE PROFESSIONAL DARK THEME === */
+
+.account-page {
+    background: #0F172A !important; /* Dark navy body bg */
+    min-height: 100vh !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 40px 20px !important;
+}
+
+.account-container {
+    max-width: 1100px !important;
+    width: 100% !important;
+    min-height: 580px !important;
+    display: flex !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* LEFT SIDE - Brand Gradient */
+.account-left {
+    width: 50% !important;
+    background: linear-gradient(160deg, #0D9488 0%, #0F766E 50%, #134E4A 100%) !important; /* Teal gradient */
+    color: #FFFFFF !important;
+    padding: 70px 50px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+}
+
+.account-left h2 {
+    font-size: 44px !important;
+    font-weight: 800 !important;
+    color: #FFFFFF !important;
+    margin-bottom: 20px !important;
+    line-height: 1.2 !important;
+}
+
+.account-left p {
+    font-size: 16px !important;
+    color: #CCFBF1 !important; /* Light teal */
+    line-height: 1.7 !important;
+    opacity: 0.9 !important;
+}
+
+/* RIGHT SIDE - Dark Card */
+.account-right {
+    width: 50% !important;
+    background: #1E293B !important; /* Dark slate */
+    padding: 60px 50px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+}
+
+/* Login/Register Tabs */
+.account-right .form-tabs {
+    display: flex !important;
+    gap: 10px !important;
+    margin-bottom: 30px !important;
+}
+
+.account-right .tab-btn {
+    flex: 1 !important;
+    padding: 12px 0 !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    background: #0F172A !important;
+    color: #94A3B8 !important;
+    border: 1px solid #334155 !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+}
+
+.account-right .tab-btn.active {
+    background: #0D9488 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #0D9488 !important;
+}
+
+/* Input Fields */
+.account-right input {
+    width: 100% !important;
+    padding: 14px 18px !important;
+    font-size: 15px !important;
+    background: #0F172A !important;
+    border: 1px solid #334155 !important;
+    border-radius: 8px !important;
+    color: #F1F5F9 !important;
+    margin-bottom: 16px !important;
+    outline: none !important;
+    transition: all 0.3s ease !important;
+}
+
+.account-right input:focus {
+    border: 1px solid #0D9488 !important;
+    box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.15) !important;
+}
+
+.account-right input::placeholder {
+    color: #64748B !important;
+}
+
+/* Remember + Forgot */
+.account-right .form-options {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin: 5px 0 25px 0 !important;
+}
+
+.account-right .remember-me {
+    color: #CBD5E1 !important;
+    font-size: 14px !important;
+}
+
+.account-right .forgot-pass {
+    color: #0D9488 !important;
+    font-size: 14px !important;
+    text-decoration: none !important;
+}
+
+.account-right .forgot-pass:hover {
+    color: #14B8A6 !important;
+    text-decoration: underline !important;
+}
+
+/* Login Button */
+.account-right .login-btn {
+    width: 100% !important;
+    padding: 15px !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    background: #0D9488 !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+}
+
+.account-right .login-btn:hover {
+    background: #0F766E !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 10px 20px rgba(13, 148, 136, 0.3) !important;
+}
+
+/* Sign In to Your Account Heading */
+.account-right h3 {
+    color: #FFFFFF !important;
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    margin-bottom: 25px !important;
+}
+
+/* Header Dark */
+body:has(.account-page) #header {
+    background: #0F172A !important;
+    border-bottom: 1px solid #1E293B !important;
+}
+
+body:has(.account-page) #navbar li a,
+body:has(.account-page) .logo {
+    color: #CBD5E1 !important;
+}
+
+body:has(.account-page) #navbar li a:hover,
+body:has(.account-page) #navbar li a.active {
+    color: #0D9488 !important;
+}
